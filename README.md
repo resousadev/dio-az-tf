@@ -42,3 +42,15 @@ Este projeto utiliza o **Terraform** para provisionar recursos no **Microsoft Az
    Confirme digitando `yes` quando solicitado.
 
 6. **Verifique os recursos no portal do Azure**.
+
+## 🧹 Limpeza
+
+Para remover os recursos criados, execute:
+```bash
+terraform destroy
+```
+Confirme digitando `yes` quando solicitado.
+
+## 📜 Licença
+
+Este projeto é livre para uso. Sinta-se à vontade para contribuir! 😊
