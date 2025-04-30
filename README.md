@@ -24,3 +24,21 @@ Este projeto utiliza o **Terraform** para provisionar recursos no **Microsoft Az
    ```bash
    git clone https://github.com/resousadev/dio-az-tf.git
    cd dio-az-tf
+
+3. **Inicialize o Terraform**:
+   ```bash
+   terraform init
+   ```
+
+4. **Visualize o plano de execução**:
+   ```bash
+   terraform plan
+   ```
+
+5. **Aplique as configurações**:
+   ```bash
+   terraform apply
+   ```
+   Confirme digitando `yes` quando solicitado.
+
+6. **Verifique os recursos no portal do Azure**.
