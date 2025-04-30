@@ -22,5 +22,5 @@ Este projeto utiliza o **Terraform** para provisionar recursos no **Microsoft Az
 
 2. **Clone o repositório**:
    ```bash
-   git clone (https://github.com/resousadev/dio-az-tf.git)
+   git clone https://github.com/resousadev/dio-az-tf.git
    cd dio-az-tf
