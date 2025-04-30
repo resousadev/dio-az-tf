@@ -31,3 +31,11 @@ resource "azurerm_mssql_server" "sql_server" {
   minimum_tls_version = "1.2"
 }
 
+resource "azurerm_mssql_database" "sql_database" {
+  name                = var.sql_database_name
+  server_id = azurerm_mssql_server.sql_server.id
+  sku_name  = "GP_Gen5_2"
+  max_size_gb = 5
+  collation   = "SQL_Latin1_General_CP1_CI_AS"
+}
+
