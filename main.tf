@@ -39,3 +39,17 @@ resource "azurerm_mssql_database" "sql_database" {
   collation   = "SQL_Latin1_General_CP1_CI_AS"
 }
 
+resource "azurerm_storage_account" "s_a" {
+  name                     = var.storage_account_name
+  resource_group_name      = azurerm_resource_group.rg.name
+  location                 = azurerm_resource_group.rg.location
+  account_tier             = "Standard"
+  account_replication_type = "LRS"
+}
+
+resource "azurerm_storage_container" "s_c" {
+  name                  = "lab-container-fotos"
+  storage_account_id    = azurerm_storage_account.s_a.id
+  container_access_type = "private"
+}
+

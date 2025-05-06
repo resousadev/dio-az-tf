@@ -7,13 +7,13 @@ variable "location" {
 variable "sql_admin_username" {
   description = "The administrator username for the SQL server."
   type        = string
-  default     = "sqladmin"
+  default     = "username"
 }
 
 variable "sql_admin_password" {
   description = "The administrator password for the SQL server."
   type        = string
-  default     = "P@ssw0rd1234!"
+  default     = "password"
 }
 
 variable "sql_server_name" {
@@ -32,4 +32,10 @@ variable "sql_server_version" {
   description = "The version of the SQL server."
   type        = string
   default     = "12.0"
+}
+
+variable "storage_account_name" {
+  description = "The name of the storage account"
+  type        = string
+  default     = "labstorageaccountdio"
 }
